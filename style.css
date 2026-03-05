@@ -1,0 +1,72 @@
+body{
+display: grid;
+grid-template-areas: 
+"um um dois"
+"tres quatro dois"
+"tres cinco cinco";
+grid-template-rows: 100px 400px 100px;
+grid-template-columns: 30% 30% 40%;
+
+
+
+}
+
+
+.cima{
+background-color: aquamarine;
+grid-area: um;
+}
+
+.lado_direito{
+background-color: brown;
+grid-area: dois;
+
+
+}
+
+.lado_esquerdo{
+    background-color: blueviolet;
+    grid-area: tres;
+}
+
+.meio{
+background-color: blue;
+grid-area: quatro;
+
+}
+
+.baixo{
+background-color: rgb(45, 62, 57);
+grid-area: cinco;
+
+}
+
+@media only screen and (max-width:850px){
+body{
+display: grid;
+grid-template-areas: 
+"um um"
+"dois tres"
+"quatro quatro"
+"cinco cinco";
+
+grid-template-rows: 100px 50px auto 100px;
+grid-template-columns: auto;
+
+}
+}
+
+@media only screen and (max-width: 450px){
+body{
+display: grid;
+grid-template-areas: 
+"um dois"
+"tres tres"
+"quartro cinco";
+
+grid-template-rows: 100px auto 100px;
+grid-template-columns: auto;
+
+}
+
+}
